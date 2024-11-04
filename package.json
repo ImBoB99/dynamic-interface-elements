@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --open --config webpack.dev.js",
     "deploy": "npm run build && git add dist -f && git commit -m \"Update deployment\" && git subtree push --prefix dist origin gh-pages",
-    "initial-deploy": "git branch gh-pages && git checkout gh-pages && git merge main --no-edit && npm run build && git add dist -f && git commit -m \"Initial deployment\" && git subtree push --prefix dist origin gh-pages && git checkout main"
+    "initial-deploy": "git branch -D gh-pages || true && git checkout --orphan gh-pages && npm run build && git add dist -f && git commit -m \"Initial deployment\" && git subtree push --prefix dist origin gh-pages && git checkout main"
   },
   "keywords": [],
   "author": "",
