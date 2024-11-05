@@ -56,14 +56,6 @@ h6 {
   --darkblue: #112D4E;
 }
 
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: flex;
-}
-
 /* Container */
 .container {
   display: flex;

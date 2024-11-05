@@ -1,15 +1,23 @@
+:root {
+  --grey: #F9F7F7;
+  --lightblue: #DBE2EF;
+  --mediumblue: #3F72AF;
+  --darkblue: #112D4E;
+}
+
 /* Dropdown Menu Styling */
-.dropdown-menu {
+.dropdown-menu-hover {
   font-size: 1rem;
   font-weight: 600;
   padding: 1rem;
   background-color: var(--darkblue);
   border-radius: 4px;
   user-select: none;
+  min-width: 220px;
 }
 
 /* Gap between dropdown menu and content */
-.dropdown-menu::after {
+.dropdown-menu-hover::after {
   content: "";
   display: block;
   height: 2px; /* The gap size */
@@ -32,6 +40,7 @@
   top: 100%;
   left: 0;
   box-sizing: border-box;
+  z-index: 99;
 }
 
 /* Dropdown Contents List */
@@ -58,7 +67,7 @@
 }
 
 /* Show dropdown contents on hover */
-.dropdown-menu:hover + .dropdown-contents,
+.dropdown-menu-hover:hover + .dropdown-contents,
 .dropdown-contents:hover {
   display: flex;
   flex-direction: column;
