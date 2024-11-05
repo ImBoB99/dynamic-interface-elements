@@ -1,6 +1,4 @@
 :root {
-  --grey: #F9F7F7;
-  --lightblue: #DBE2EF;
   --mediumblue: #3F72AF;
   --darkblue: #112D4E;
 }
@@ -11,6 +9,10 @@
 
 .visible {
   display: flex;
+}
+
+.module-container {
+  position: relative;
 }
 
 /* Dropdown Menu Styling */
