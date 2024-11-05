@@ -1,0 +1,65 @@
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: var(--darkblue);
+  border-radius: 4px;
+  user-select: none;
+}
+
+/* Gap between dropdown menu and content */
+.dropdown-menu::after {
+  content: "";
+  display: block;
+  height: 2px; /* The gap size */
+  background-color: transparent;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+}
+
+/* Dropdown Contents Styling */
+.dropdown-contents {
+  display: none;
+  margin-top: 2px;
+  width: 100%;
+  background-color: var(--darkblue);
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+}
+
+/* Dropdown Contents List */
+.dropdown-contents ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Dropdown Item Styling */
+.dropdown-item {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease-in-out;
+  text-indent: 8px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--mediumblue);
+  cursor: pointer;
+}
+
+/* Show dropdown contents on hover */
+.dropdown-menu:hover + .dropdown-contents,
+.dropdown-contents:hover {
+  display: flex;
+  flex-direction: column;
+}

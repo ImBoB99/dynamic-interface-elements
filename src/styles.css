@@ -5,12 +5,14 @@
 }
 * {
   margin: 0;
+  padding: 0;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #101010;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 img,
 picture,
@@ -46,3 +48,33 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+:root {
+  --grey: #F9F7F7;
+  --lightblue: #DBE2EF;
+  --mediumblue: #3F72AF;
+  --darkblue: #112D4E;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  gap: 2rem;
+}
+
+.module-container {
+  position: relative;
+}
+
