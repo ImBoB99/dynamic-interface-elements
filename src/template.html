@@ -83,5 +83,36 @@
         <div class="slider-btn arrow-right"><i class="arrow-right"></i></div>
       </div>
     </div>
+    <div class="container">
+      <form novalidate>
+        <label for="user_email">Email:</label>
+        <input type="email" name="user_email" id="user_email" minlength="4" maxlength="30">
+        <span class="error" aria-live="polite"></span>
+
+        <label for="user_country">Country:</label>
+        <select name="user_country" id="user_country">
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="nl">The Netherlands</option>
+        </select>
+        <span class="error" aria-live="polite"></span>
+
+        <label for="user_postal_code">Postal Code:</label>
+        <input type="text" id="user_postal_code" />
+        <span class="error" aria-live="polite"></span>
+
+        <label for="user_password">Password:</label>
+        <input type="password" name="user_password" id="user_password">
+        <span class="error" aria-live="polite"></span>
+
+        <label for="user_password_confirm">Confirm Password:</label>
+        <input type="password" name="user_password_confirm" id="user_password_confirm">
+        <span class="error" aria-live="polite"></span>
+
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
   </body>
 </html>
