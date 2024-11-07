@@ -1,0 +1,64 @@
+:root {
+  --grey: #F9F7F7;
+  --lightblue: #DBE2EF;
+  --mediumblue: #3F72AF;
+  --darkblue: #112D4E;
+  --error: #ff0000;
+  --valid: #08b608;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* error message styles */
+.error {
+  width: 100%;
+  max-width: 400px;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.5rem;
+}
+
+form input, form select {
+  min-width: 400px;
+  padding: 4px 8px;
+  font-size: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+button[type=submit] {
+  min-width: 400px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 8px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+
+button[type=submit]:hover {
+  background-color: #45a049;
+  transition: background 0.2s ease-in;
+}
+
+input:required:invalid:focus {
+  border: 1px solid var(--error);
+}
+
+input:required:valid {
+  border: 1px solid var(--valid);
+}

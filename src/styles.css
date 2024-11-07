@@ -54,6 +54,8 @@ h6 {
   --lightblue: #DBE2EF;
   --mediumblue: #3F72AF;
   --darkblue: #112D4E;
+  --error: #ff0000;
+  --valid: #08b608;
 }
 
 /* Container */
@@ -64,27 +66,4 @@ h6 {
   justify-content: center;
   margin: 2rem;
   gap: 2rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* error message styles */
-.error {
-  width: 100%;
-  padding: 0;
-
-  font-size: 80%;
-  color: white;
-  background-color: #900;
-  border-radius: 0 0 5px 5px;
-
-  box-sizing: border-box;
-}
-
-.error.active {
-  padding: 0.3em;
 }

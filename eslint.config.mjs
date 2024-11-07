@@ -7,7 +7,6 @@ import configPrettier from "eslint-config-prettier";
 export default [
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
-  configPrettier, // Disables ESLint rules that might conflict with Prettier
   {
     plugins: {
       prettier: pluginPrettier,
@@ -16,4 +15,5 @@ export default [
       "prettier/prettier": "error", // Runs Prettier as an ESLint rule
     },
   },
+  configPrettier, // Disables ESLint rules that might conflict with Prettier
 ];

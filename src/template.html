@@ -86,7 +86,7 @@
     <div class="container">
       <form novalidate>
         <label for="user_email">Email:</label>
-        <input type="email" name="user_email" id="user_email" minlength="4" maxlength="30">
+        <input required type="email" name="user_email" id="user_email" minlength="4" maxlength="30" placeholder="example@hotmail.com">
         <span class="error" aria-live="polite"></span>
 
         <label for="user_country">Country:</label>
@@ -99,15 +99,15 @@
         <span class="error" aria-live="polite"></span>
 
         <label for="user_postal_code">Postal Code:</label>
-        <input type="text" id="user_postal_code" />
+        <input required type="text" id="user_postal_code" placeholder="eg. for Switzerland: 3689" />
         <span class="error" aria-live="polite"></span>
 
         <label for="user_password">Password:</label>
-        <input type="password" name="user_password" id="user_password">
+        <input required type="password" name="user_password" id="user_password" placeholder="Your Password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
         <span class="error" aria-live="polite"></span>
 
         <label for="user_password_confirm">Confirm Password:</label>
-        <input type="password" name="user_password_confirm" id="user_password_confirm">
+        <input required type="password" name="user_password_confirm" id="user_password_confirm" placeholder="Confirm Your Password">
         <span class="error" aria-live="polite"></span>
 
         <button type="submit">Submit</button>

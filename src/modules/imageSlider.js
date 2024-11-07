@@ -80,4 +80,4 @@ function startAutoSlide() {
 }
 
 // Start auto-slide on load
-// let autoSlideInterval = startAutoSlide();
+let autoSlideInterval = startAutoSlide();
